@@ -1,0 +1,148 @@
+@font-face { 
+    font-family: Avrilya; 
+    src: url('Avrilya.ttf'); 
+} 
+
+html, body, .banner, #content {
+    width:100%;
+    height:118%;
+    margin:0;
+    padding:0;
+}
+
+.banner {
+  background: url("ewcheader.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    position: relative;
+    text-align: center;
+}
+.banner img{
+    position: absolute;
+    bottom:0px;
+    width: 70px;
+}
+
+.banner img:hover{
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+#icon {
+    width:400px;
+    height:auto;
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+    width:250px;
+    height:250px;
+}
+
+#insta {
+    text-align: center;
+}
+
+.aoshimaPIC {
+    content: url("aoshima.jpg");
+}
+.aoshimaPIC:hover {
+    content: url("aoshima_cover.jpg");
+}
+.naganoPIC {
+    content: url("nagano.jpg");
+}
+.naganoPIC:hover {
+    content: url("nagano_cover.jpg");
+}
+.austinPIC {
+    content: url("austin.jpg");
+}
+.austinPIC:hover {
+    content: url("austin_cover.jpg");
+}
+.nagoyaPIC {
+    content: url("nagoya.jpg");
+}
+.nagoyaPIC:hover {
+    content: url("nagoya_cover.jpg");
+}
+@-webkit-keyframes hvr-bob {
+  0% { -webkit-transform: translateY(-16px); 
+      transform: translateY(-16px); }
+  50% { -webkit-transform: translateY(-4px);
+      transform: translateY(-4px); }
+  100% { -webkit-transform: translateY(-16px);
+      transform: translateY(-16px); }
+}
+
+@keyframes hvr-bob {
+  0% { -webkit-transform: translateY(-16px);
+      transform: translateY(-16px); }
+  50% { -webkit-transform: translateY(-4px);
+      transform: translateY(-4px); }
+  100% { -webkit-transform: translateY(-16px);
+      transform: translateY(-16px); }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% { -webkit-transform: translateY(-16px);
+      transform: translateY(-16px); }
+}
+
+@keyframes hvr-bob-float {
+  100% { -webkit-transform: translateY(-16px);
+      transform: translateY(-16px); }
+}
+#name {
+    float: left;
+}
+#favicons {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    width: 60px;
+    float: right;
+    display: block;
+}
+#wordpress {
+    float:left;
+    margin-left: 10px;
+}
+#instagram {
+    float: right;
+}
+#stuff p{
+    text-align: center;
+    font-family: Avrilya;
+    font-size: 90px;
+}
+
+#stuff {
+    text-align: center;
+}
